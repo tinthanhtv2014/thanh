@@ -11,9 +11,86 @@
 .container{
     width: 100%;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
     position: relative;
+    
+    
+}
+
+.header{
+    /* left: 10%; */
+    top: 0;
+    width: 100%;
+    height: 5%;
+    position: sticky;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tieude{
+    flex: 1;
+    align-self: center;
+}
+
+.thumuc{
+    display: flex;
+    justify-content: space-around;
+    flex: 3;
+    align-self: center;
+}
+h1:hover{
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+
+h3:hover{
+    color: white;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.login{
+    flex: 1;
+    align-self: center;
+}
+
+
+.login>button{
+    width: 90px;
+    height: 50px;
+    background-color: aqua;
+   font-size: 20px;
+    border: 0;
+}
+
+.login>button:hover{
+    border: 1px solid black;
+    background-color: orange;
+    transition: 1s;
+    border-radius: 40%;
+    color: white;
+}
+
+
+.bodyy{
+    width: 100%;
+    height: 100%;
+    background-color: bisque;
+    display: flex;
+    
+}
+
+.nav{
+    width: 20%;
+    height: 80%;
+    background-color: aquamarine;
+    position: absolute;
+}
+.section{
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
 }
 
 .xacnhan{
@@ -21,36 +98,16 @@
     width: 30%;
     height: 40%;
     top: 20%;
-    background-color: brown;
+    background-color: bisque;
     left: 30%;
     display: none;
     animation: show 1s ease;
 }
 
-.header{
-    flex: 1;
-    background-color: aqua;
-}
-
-.bodyy{
-    flex: 6;
-    background-color: bisque;
-    display: flex;
-
-}
-
-.nav{
-    flex: 1;
-    background-color: beige;
-}
-
-.section{
-    flex: 5;
-    background-color: blueviolet;
-}
 
 .footer{
-    flex: 1;
+    width: 100%;
+    height: 20%;
     background-color: blue;
 }
 
@@ -61,4 +118,55 @@
     to{
         top: 20%;
     }
+}
+
+.formm{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: first baseline; */
+    /* margin-top: 10%; */
+}
+
+.tuychinh{
+    margin-top: 5%;
+
+}
+
+.input{
+    width: 100%;
+}
+
+.subbmit{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    /* flex-direction: column; */
+    flex-basis: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.subbmit>button{
+    width: 90px;
+    height: 50px;
+    /* border-radius: 15%; */
+    border: 0;
+    background-color: bisque;
+    font-size: 19px;
+    cursor: pointer;
+
+}
+
+.subbmit>button:hover{
+    color: white;
+    background-color: orange;
+    transition: 1s ease;
+    border-radius: 50%;
+    /* font-size: 20px; */
+}
+
+.subbmit>button:active{
+   filter: brightness(10%);
 }
