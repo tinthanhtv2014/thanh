@@ -1,0 +1,64 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.wrap{
+    margin: 0%;
+    padding: 0%;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.xacnhan{
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    top: 20%;
+    background-color: brown;
+    left: 30%;
+    display: none;
+    animation: show 1s ease;
+}
+
+.header{
+    flex: 1;
+    background-color: aqua;
+}
+
+.bodyy{
+    flex: 6;
+    background-color: bisque;
+    display: flex;
+
+}
+
+.nav{
+    flex: 1;
+    background-color: beige;
+}
+
+.section{
+    flex: 5;
+    background-color: blueviolet;
+}
+
+.footer{
+    flex: 1;
+    background-color: blue;
+}
+
+@keyframes  show{
+    from{
+        top: 5%;
+    }
+    to{
+        top: 20%;
+    }
+}
