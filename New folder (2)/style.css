@@ -83,9 +83,9 @@ h3:hover{
 
 .nav{
     width: 20%;
-    height: 80%;
+    height: 100%;
     background-color: aquamarine;
-    position: absolute;
+    /* position: absolute; */
 }
 .section{
     width: 100%;
