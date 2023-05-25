@@ -52,7 +52,7 @@ h1:hover{
 }
 
 h3:hover{
-    color: white;
+    color: #FDD284;
     transition: 1s;
     cursor: pointer;
 }
