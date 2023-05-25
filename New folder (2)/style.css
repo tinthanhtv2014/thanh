@@ -77,6 +77,11 @@ h3:hover{
     flex: 1;
     align-self: center;
 }
+a:hover{
+    color: #b98225;
+    transition: 1s;
+    cursor: pointer;
+}
 
 
 .login>button{
@@ -95,6 +100,9 @@ h3:hover{
     color: white;
 }
 
+.bentren h1{
+    transition: 1s;
+}
 
 .bodyy{
     width: 100%;
@@ -131,12 +139,19 @@ h3:hover{
     /* background-color: ; */
     align-items: center;
     transition: 1s;
+    overflow: hidden;
 }
 .bentren img{
     width: 40%;
     height: 100%;
+    overflow: hidden;
 }
 
+.bentren img:hover{
+    transform: scale(1.2);
+    overflow: hidden;
+    transition: 1s;
+}
 
 .xacnhan{
     position: absolute;
