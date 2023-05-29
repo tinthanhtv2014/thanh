@@ -72,7 +72,7 @@ ul li{
     margin-left: 3%;
     list-style: none;
     /* color: darkgray; */
-    
+    cursor: pointer;
 }
 
 ul li:hover{
@@ -105,6 +105,14 @@ h1{
 .timkiem i{
     margin-left: 4%;
     transform: scale(3);
+    cursor: pointer;
+
+}
+
+.timkiem i:hover{
+    transform: scale(3.5);
+    transition: 1s;
+    opacity: 0.5;
 }
 
 .timkiem input{
@@ -192,6 +200,7 @@ h1{
 h2{
     font-size: 50px;
     transition: 1s;
+   
 }
 
 .xacnhan{
