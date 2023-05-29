@@ -71,6 +71,11 @@ h3:hover{
     color: #b98225;
     transition: 1s;
     cursor: pointer;
+    transform: scale(1.2);
+}
+
+h3:hover>.thumuc>h3{
+    opacity: 0.2;
 }
 
 .login{
