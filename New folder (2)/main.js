@@ -141,7 +141,7 @@ function sub(){
   if(a.length > 0 && b.length > 0 && c.length > 0 && d.length > 0){
    var e = document.getElementById('hiennut');
    e.style.display = 'none';
-   alert('cảm ơn: '+ a + '\n số điện thoại: '+c + '\nemail xác nhận:' + b + '\nđịa chỉ ' + d);
+   alert('cảm ơn: '+ a + '\nsố điện thoại: '+ c + '\nemail xác nhận:' + b + '\nđịa chỉ ' + d);
   }else{
    alert('vui lòng nhập lại');
   }
