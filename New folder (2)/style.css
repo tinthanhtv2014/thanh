@@ -236,7 +236,7 @@ h2{
 }
 
 .xacnhan{
-    position: absolute;
+    position: fixed;
     width: 30%;
     height: 40%;
     top: 20%;
@@ -317,6 +317,7 @@ form input{
     transition: 1s ease;
     border-radius: 50%;
     /* font-size: 20px; */
+    border: 1px solid  black;
 }
 
 .subbmit>button:active{
