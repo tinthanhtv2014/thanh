@@ -73,7 +73,12 @@ ul li{
     list-style: none;
     /* color: darkgray; */
     cursor: pointer;
-}
+    font-family: 'Charm', cursive;
+font-family: 'Cinzel Decorative', cursive;
+ font-family: 'Great Vibes', cursive;
+font-family: 'Mandali', sans-serif;
+/* font-family: 'Pinyon Script', cursive; */
+} 
 
 ul li:hover{
     opacity: 0.3;
@@ -90,12 +95,24 @@ ul li:hover{
 h1{
     margin-top: 2%;
     margin-left: 25%;
+    font-family: 'Charm', cursive;
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Pinyon Script', cursive;
 }
 
 .gach{
     border-left: 1px solid black;
 }
 
+span{
+    color: red;
+    margin-left: 3px;
+}
+
+.invalid{
+    border-color: red;
+}
 
 .timkiem{
     width: 70%;
@@ -120,6 +137,7 @@ h1{
     margin-left: 2%;
     width: 70%;
     height: 30%;
+    border-color: red;
 }
 
 #myText{
