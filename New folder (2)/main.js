@@ -150,9 +150,15 @@ function sub(){
   if(a.length > 0 && b.length > 0 && c.length > 0 && d.length > 0){
    var e = document.getElementById('hiennut');
    e.style.display = 'none';
-   alert('cảm ơn: '+ a + '\nsố điện thoại: '+ c + '\nemail xác nhận:' + b + '\nđịa chỉ ' + d);
+   var f = document.getElementById('hienmenu');
+   f.style.display = 'block';
+   f.innerHTML = 
+   alert('cảm ơn: '+ a + ' \r số điện thoại: '+ c + '\r email xác nhận:' + b + '\r địa chỉ ' + d)
   }else{
    alert('vui lòng nhập lại');
   }
    
 }
+
+
+
