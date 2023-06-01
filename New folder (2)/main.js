@@ -29,8 +29,17 @@ function tatnut(){
     a.style.display = 'none';
 }
 
-
-
+var boxx =  document.getElementById('hiennut'); 
+var toggle = false;
+function cheching(){
+  if(toggle){
+    boxx.style.display = 'block';
+    toggle = false;
+  }else{
+    boxx.style.display = 'none';
+    toggle = true;
+  }
+}
 
 
 var a = document.getElementById('form1');
