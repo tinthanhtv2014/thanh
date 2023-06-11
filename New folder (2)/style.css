@@ -312,19 +312,22 @@ h2{
     /* font-size: 30px; */
     background-color: #F24405;
     overflow: hidden;
+    
 }
 
 
 .hinhanh{
     width: 100%;
-    height: 80%;
+    height: 100%;
     background-color: #F5EDE0;
-    overflow: hidden;
+    /* overflow: hidden; */
+   
 }
 
 .hinhanh .setanh{
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 img{
@@ -332,14 +335,51 @@ img{
     height: 100%;
 }
 
- .xacnhanmua{
-    width: 100%;
+.xacnhanmua{
+    width: 40%;
     height: 20%;
-    background-color: #00FF00;
+    /* background-color: red; */
+    position: absolute;
+    transform: translate(-100%, -130%);
+    /* display: flex; */
 } 
 
 
+.danhgia{
+    width: 100%;
+    height: 20%;
+    background-color: red;
+    position: absolute;
+    transform: translate(-100%, -510%);
+    box-shadow: 0 0 4px 0 black;
+}
 
+.setanh:hover>.xacnhanmua{ 
+    transform: translate(0%,-130%);
+    transition: 1s;
+}
+.setanh:hover>.danhgia{
+    transform: translate(0%, -510%);
+    transition: 1s;
+}
+
+
+.setanh:hover>img{
+    filter: brightness(50%);
+    transition: 1s;
+}
+
+.annut{
+    width: 70%;
+    height: 70%;
+    color: white;
+    background-color: #F24405;
+    /* border-radius: 50%; */
+    border-top: 2px;
+    box-shadow: 0 0 4px 0 black;
+    cursor: pointer;
+    font-size: 15px;
+}
 
 .footer{
     width: 100%;

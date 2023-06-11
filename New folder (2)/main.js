@@ -40,7 +40,7 @@ function cheching(){
     toggle = true;
   }
 }
-
+//kiểm tra họ tên
 
 var a = document.getElementById('form1');
 function blurr(erros){
@@ -64,11 +64,8 @@ if(a){
 
 
 
-
+//kiểm tra mail
 var b = document.getElementById('form2');
-
-
-
 function blurrr(erross){
   return erross ? undefined : 'vui lòng nhập mail';
 }
@@ -94,7 +91,7 @@ if(b){
 
 
 
-
+//kiểm tra số điện thoại
 var c = document.getElementById('form3');
 function blurrrr(erros){
   return erros ? undefined : 'vui lòng nhập số điện thoại';
@@ -108,8 +105,14 @@ if(c){
       c.classList.add('invalid');
       document.getElementById('fomr3').innerHTML= valid;
     }else{
-      c.classList.remove('invalid');
+      if(isNaN(c.value)){
+        c.classList.add('invalid');
+      document.getElementById('fomr3').innerHTML= 'vui lòng nhập lại số điện thoại của bạn !!';
+      }else{
+        c.classList.remove('invalid');
       document.getElementById('fomr3').innerHTML= '';
+      }
+      
     }
 }
 }
@@ -117,7 +120,7 @@ if(c){
 
 
 
-
+//kiểm tra địa chỉ
 var d = document.getElementById('form4');
 function blurrrrr(erros){
   return erros ? undefined : 'vui lòng nhập địa chỉ';
@@ -141,18 +144,17 @@ if(d){
 
 
 
-
+//nút xác nhận
 function sub(){
   var a = document.getElementById('form1').value;
   var b = document.getElementById('form2').value;
   var c = document.getElementById('form3').value;
   var d = document.getElementById('form4').value;
+  var e;
+  
   if(a.length > 0 && b.length > 0 && c.length > 0 && d.length > 0){
    var e = document.getElementById('hiennut');
    e.style.display = 'none';
-   var f = document.getElementById('hienmenu');
-   f.style.display = 'block';
-   f.innerHTML = 
    alert('cảm ơn: '+ a + ' \r số điện thoại: '+ c + '\r email xác nhận:' + b + '\r địa chỉ ' + d)
   }else{
    alert('vui lòng nhập lại');
