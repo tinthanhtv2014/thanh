@@ -350,8 +350,23 @@ img{
     height: 20%;
     background-color: red;
     position: absolute;
-    transform: translate(-100%, -510%);
+    transform: translate(-100%, -600%);
     box-shadow: 0 0 4px 0 black;
+}
+
+.noidung{
+    width: 20%;
+    height: 55%;
+    background-color: red;
+    position: absolute;
+    transform: translate(-200%, 206%);
+    box-shadow: 0 0 4px 0 black;
+}
+
+
+.setanh:hover>.noidung{
+    transform: translate(0%, -148%);
+    transition: 1s;
 }
 
 .setanh:hover>.xacnhanmua{ 
