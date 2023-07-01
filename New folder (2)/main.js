@@ -6,15 +6,15 @@ setInterval(function() {
   }, 1000);
 
 
-  setInterval(function() {
-    var randomColor = Math.floor(Math.random()*16777215).toString(16);
-    document.querySelector('.bentren h2').style.color = "#" + randomColor;
-  }, 1000);
+  // setInterval(function() {
+  //   var randomColor = Math.floor(Math.random()*16777215).toString(16);
+  //   document.querySelector('.bentren h2').style.color = "#" + randomColor;
+  // }, 1000);
 
-  setInterval(function() {
-    var randomColor = Math.floor(Math.random()*16777215).toString(16);
-    document.querySelector('.bentren').style.backgroundColor = "#" + randomColor;
-  }, 1000);
+  // setInterval(function() {
+  //   var randomColor = Math.floor(Math.random()*16777215).toString(16);
+  //   document.querySelector('.bentren').style.backgroundColor = "#" + randomColor;
+  // }, 1000);
 
 function show(){
     var a = document.getElementById('hiennut');
@@ -165,8 +165,36 @@ function sub(){
 
 
 $('.bentren').slick({
-  slidesToShow: 1,
+  slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 1000,
+  arrows: false,
+  dots: false,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+  autoplaySpeed: 1000,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+  autoplaySpeed: 1000,
+      }
+    }
+  ]
 });
